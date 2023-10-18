@@ -2,11 +2,16 @@
 body {
     color:#131212
 }
+#container{
+    width: 80%;
+    margin: auto;
+}
 
 /*2. titol nivell 1 fons blanc lletra gris*/
 h1{
      background :#FFFFFF;
      color:#808080;
+     /*canviar el color de Títol document*/
 }
 
 /*3. tots els strong en color verd i subratllats*/
@@ -14,27 +19,45 @@ strong{
         color:#008000;
         text-decoration: underline;
 }
-paragraf1 strong{
+paragraf1, .paragraf2 strong{
                    color:#008000;
                    text-decoration: underline;
-}
-.paragraf2 strong{
-                   color:#008000;
-                   text-decoration: underline;
+                   /*canvia el color de <strong> a verd i els subratlla*/
 }
 
+
 /*4. enllaços del paràgraf2 en italica*/
-a{
+.paragraf2 a{
   font-style: italic;
-}
-paragraf1 a{
-         font-style: italic;
 }
 
 /*5. footer general del web centrat i lletra de 10px*/
-footer{
-       text-align:center
+footer {
+       text-align: center;
        font-size:10px;
 }
 
 /*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+/*a.) el color de fons del títol canvia a gris, el <strong> del 2n paràgraf canvia al color original a estils.inicials
+Alguns estils de l'últim fitxer carregat substituiran els estils dels fitxers carregats anteriorment.*/
+
+/*b.) Utilitza selectors específics per orientar l'element.*/
+
+/*body {
+      color:inherit
+  }
+strong{
+        color:inherit;
+        text-decoration: none;
+}
+paragraf1, paragraf2 strong{
+                   color:inherit;
+                   text-decoration: none;
+}
+
+a{
+  font-style: none;
+}
+footer{
+       text-align: none;
+              font-size:inherit;*/
